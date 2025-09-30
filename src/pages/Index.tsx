@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import StatsAndCertifications from "@/components/StatsAndCertifications";
 import WhoWeAre from "@/components/WhoWeAre";
 import InsightCards from "@/components/InsightCards";
+import WhyChooseUs from "@/components/WhyChooseUs";
 import ClientStoriesCarousel from "@/components/ClientStoriesCarousel";
 import AwardsSection from "@/components/AwardsSection";
 import CareersSection from "@/components/CareersSection";
@@ -18,6 +19,7 @@ const Index = () => {
       <StatsAndCertifications />
       <WhoWeAre />
       <InsightCards />
+      <WhyChooseUs />
       
       {/* Client Stories Section Title */}
       <section className="py-12 md:py-16 bg-background">
