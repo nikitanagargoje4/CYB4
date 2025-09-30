@@ -1,6 +1,7 @@
-import { Target, Users, Lightbulb } from "lucide-react";
+import { Target, Users, Lightbulb, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
 const AnimatedNumber = ({ end, suffix = "", duration = 2000 }: { end: number; suffix?: string; duration?: number }) => {
   const [count, setCount] = useState(0);
@@ -88,6 +89,17 @@ const WhoWeAre = () => {
                 <h3 className="text-lg font-semibold text-white mb-1">Innovation</h3>
                 <p className="text-sm text-gray-400">Digital transformation</p>
               </div>
+            </div>
+
+            {/* Know More About Us Button */}
+            <div className="pt-8">
+              <Link 
+                to="/about" 
+                className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-white font-medium px-6 py-3 rounded-md transition-all duration-300 hover:gap-3 hover:shadow-lg hover:shadow-primary/30"
+              >
+                Know More About Us
+                <ArrowRight className="w-5 h-5" />
+              </Link>
             </div>
           </div>
 
